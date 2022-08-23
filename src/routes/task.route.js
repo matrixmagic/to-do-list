@@ -6,7 +6,7 @@ const {
   addTaskToUser,
   updateTask,
   deleteTask,
-  getTaskById
+  getTaskById,
 } = require('../controllers/task.controller');
 
 

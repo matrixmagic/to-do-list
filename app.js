@@ -18,9 +18,12 @@ server.use(cors({ origin: true, credentials: true }));
 server.use('/public', express.static('public'));
 
  const taskRoutes = require('./src/routes/task.route');
+ const userRoutes = require('./src/routes/user.route');
 
 
 server.use('/', taskRoutes);
+server.use('/', userRoutes);
+
 
 
 const port = process.env.PORT || 3001;
